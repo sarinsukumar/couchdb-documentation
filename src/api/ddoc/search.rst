@@ -154,6 +154,7 @@
 
 **Response**:
 
+
 .. code-block:: javascript
 
     {
@@ -166,3 +167,10 @@
             "committed_seq": 7125496
         }
     }
+    
+.. note::
+pending_seq: the sequence number of changes in CouchDb that has reached Lucene (in memory + and on disk)
+committed_seq: the sequence number of changes in CouchDb that has been committed to Lucene index on disk
+doc_del_count - number of deleted documents in the index
+doc_count - number of document in the index
+disk_size -  the size of index on disk in bytes
